@@ -14,7 +14,7 @@ class _FirebaseLogInState extends State<FirebaseLogIn> {
   final controllerPassword = TextEditingController();
 
   //Obten el controlador de autenticacion inyectado
-
+  AuthenticationController authenticationController = Get.find();
 
   _login(theEmail, thePassword) async {
     print('_login $theEmail $thePassword');

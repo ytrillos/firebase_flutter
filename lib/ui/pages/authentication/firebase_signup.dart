@@ -14,7 +14,7 @@ class _FirebaseSignUpState extends State<FirebaseSignUp> {
   final controllerPassword = TextEditingController();
 
   //Obten el controlador de autenticacion inyectado
- 
+  AuthenticationController authenticationController = Get.find();
   _signup(theEmail, thePassword) async {
     try {
       await authenticationController.signUp(theEmail, thePassword);
